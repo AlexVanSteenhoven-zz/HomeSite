@@ -10,6 +10,8 @@ const layouts = require('express-ejs-layouts');
 
 // Require routes
 const indexRoute = require('./routes/index');
+const loginRoute = require('./routes/users');
+const registerRoute = require('./routes/users');
 
 // Setting up express
 app.set('view engine', 'ejs');
@@ -40,6 +42,8 @@ db.on('disconnected', () => {
 
 // Use the routes that are imported
 app.use('/', indexRoute);
+app.use('/users', loginRoute);
+app.use('/users', registerRoute);
 
 // Setting up port and start the server
 const port = process.env.PORT || 3000;
