@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mybrary</title>
+
+    <!-- Css Links -->
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- CDN's -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!-- nav.ejs -->
+    <% include ./partials/nav.ejs %>
+
+    <!-- Body -->
+    <%- body %>
+    
+    <!-- footer.ejs -->
+    <% include ./partials/footer.ejs %>
+
+    <!-- Scripts -->
+    <script src="/js/components/nav.js"></script>
+  </body>
+</html>

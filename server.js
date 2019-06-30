@@ -17,7 +17,7 @@ app.set('views', __dirname + '/views');
 
 app.use(express.static('public'));
 app.use(layouts);
-app.set('layout', 'layouts/layout');
+app.set('layout', 'layout');
 
 // Connect to mongoDB with mongoose
 const mongoose = require('mongoose');
